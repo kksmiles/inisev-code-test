@@ -23,7 +23,7 @@ class Post extends Model
         return $this->belongsTo(Website::class);
     }
 
-    public function notify_users()
+    public function users_to_notify()
     {
         return $this->belongsToMany(User::class, UserPostNotification::class)
             ->withPivot('sent')

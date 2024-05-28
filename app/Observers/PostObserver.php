@@ -13,7 +13,7 @@ class PostObserver
     {
         $website = $post->website;
         $userIds = $website->subscribed_users->pluck('id');
-        $post->notify_users()->sync($userIds);
+        $post->users_to_notify()->sync($userIds);
     }
 
     /**
