@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "message": "Post successfully updated",
+  "data": {
+      "id": 31,
+      "website_id": 1,
+      "title": "My First Post edited",
+      "description": "This is my first post. I hope you like it! edited!"
+  }
+}

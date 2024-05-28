@@ -44,4 +44,19 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function websites()
+    {
+        return $this->belongsToMany(Website::class, UserWebsiteSubscription::class)
+            ->withPivot('is_subscribed', 'subscribed_at', 'unsubscribed_at')
+            ->withTimestamps();
+    }
+    public function subscribed_websites()
+    {
+        return $this->websites()->wherePivot('is_subscribed', true);
+    }
+    public function unsubscribed_websites()
+    {
+        return $this->websites()->wherePivot('is_subscribed', false);
+    }
 }

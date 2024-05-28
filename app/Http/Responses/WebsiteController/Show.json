@@ -1,0 +1,10 @@
+{
+    "status": "success",
+    "message": "Website successfully retrieved",
+    "data": {
+        "id": 21,
+        "name": "My Website",
+        "url": "https://www.example.com",
+        "description": "This is my website. I hope you like it!"
+    }
+}

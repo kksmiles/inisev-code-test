@@ -1,0 +1,506 @@
+name: 'Website management'
+description: |-
+
+  APIs for managing websites
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/websites
+    metadata:
+      groupName: 'Website management'
+      groupDescription: |-
+
+        APIs for managing websites
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Index Websites'
+      description: 'This endpoint will list all websites'
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+              "data": [
+                  {
+                      "id": 1,
+                      "name": "Sequi voluptates non eaque blanditiis velit blanditiis deserunt.",
+                      "url": "http://www.beer.net/nobis-possimus-amet-ut-dolore-aut-debitis",
+                      "description": "Aut voluptatem debitis quasi ab deserunt expedita aspernatur. Sed laudantium et ipsam eum quo. Rerum quidem voluptas sapiente et."
+                  },
+                  {
+                      "id": 2,
+                      "name": "Perspiciatis reprehenderit sint rem asperiores.",
+                      "url": "https://kutch.net/ratione-quod-hic-beatae.html",
+                      "description": "Ullam dolorem et consequatur dicta est aut dolor. Doloribus qui ut perferendis sint quidem doloremque quas ratione. Enim et voluptas explicabo ut error. Recusandae et eum est quo accusamus vero maiores."
+                  },
+                  {
+                      "id": 3,
+                      "name": "Accusamus et aut et ratione et.",
+                      "url": "http://dubuque.net/",
+                      "description": "Illum magni et quod omnis et ea. Repellat ullam consectetur et aliquid animi sint. Vel illum tempore mollitia et quia qui est. Ut non et labore saepe provident in doloremque nostrum."
+                  },
+                  {
+                      "id": 4,
+                      "name": "Qui sed quibusdam consequatur dolores illo id.",
+                      "url": "http://steuber.com/qui-facilis-temporibus-earum-minus-eaque-est",
+                      "description": "Aliquam recusandae ab eligendi inventore rem odio. Nulla totam consectetur in non excepturi."
+                  },
+                  {
+                      "id": 5,
+                      "name": "Qui officia sit nam commodi neque voluptatem.",
+                      "url": "http://hauck.net/aut-corporis-odit-aliquam-repellendus-inventore",
+                      "description": "In in veritatis alias odio. Sapiente vel consequatur asperiores eius possimus quia eaque minus. Consequatur voluptates distinctio cumque aut totam sit ad fugiat."
+                  },
+                  {
+                      "id": 6,
+                      "name": "Aliquam impedit et eaque non inventore.",
+                      "url": "http://hammes.com/",
+                      "description": "Vel nihil rem quia deserunt libero. Impedit non odio aperiam corrupti voluptatibus expedita. Deserunt in consequatur tenetur est consequatur. Rerum vel nihil tempore qui. Delectus rerum occaecati ratione repudiandae ut."
+                  },
+                  {
+                      "id": 7,
+                      "name": "Repudiandae quam vel assumenda voluptatem iure facere.",
+                      "url": "http://www.legros.net/deleniti-non-aut-corporis-magnam-sunt-optio.html",
+                      "description": "Maxime ex saepe maiores magnam porro ut est. Ut quasi dolor exercitationem eaque."
+                  },
+                  {
+                      "id": 8,
+                      "name": "Autem eum repellendus qui et necessitatibus.",
+                      "url": "http://kessler.com/id-enim-provident-quo-repellendus-iste",
+                      "description": "Ut sequi atque molestias magnam qui. Soluta voluptatem quibusdam ut accusamus quia dolorem asperiores quam. Ipsam aspernatur id ipsam aperiam sed. Dolor officiis natus fugiat repellat."
+                  },
+                  {
+                      "id": 9,
+                      "name": "Nulla quia est esse esse ducimus laudantium.",
+                      "url": "http://www.rosenbaum.com/ut-velit-placeat-qui-quo-vel-magnam-ullam.html",
+                      "description": "Voluptatibus aut deleniti aliquid omnis magni odio repellat. Earum omnis molestiae aut odio excepturi magni nam cum. Amet exercitationem eius expedita maxime recusandae. Animi et voluptatem consequuntur sint accusantium tenetur et."
+                  },
+                  {
+                      "id": 10,
+                      "name": "Dolore beatae quo architecto natus nemo et nulla.",
+                      "url": "http://corkery.com/",
+                      "description": "Vitae neque praesentium et temporibus blanditiis quia. Eos maiores accusamus voluptas non eius. Earum sapiente molestias voluptatum aut sed."
+                  },
+                  {
+                      "id": 11,
+                      "name": "Odit est delectus et et architecto doloremque.",
+                      "url": "http://gusikowski.org/modi-corporis-adipisci-veniam-ut-qui.html",
+                      "description": "Aut qui doloribus iusto. Dolorem deleniti aperiam recusandae. Cum et in pariatur voluptatum. Iusto est autem sunt sit sit et aut quod."
+                  },
+                  {
+                      "id": 12,
+                      "name": "Aperiam blanditiis et dolor atque omnis tempore qui.",
+                      "url": "https://www.walter.com/accusamus-dolorem-dolor-est-in-quis-alias",
+                      "description": "Omnis consequatur deserunt voluptatem ex vel unde. Aliquam accusamus expedita animi voluptatem expedita dolores. Expedita voluptas nihil vitae hic voluptatem."
+                  },
+                  {
+                      "id": 13,
+                      "name": "Reiciendis magnam repudiandae cum cum non libero non et.",
+                      "url": "http://www.kutch.com/vero-earum-sit-consequatur-totam-sequi-iusto",
+                      "description": "Sed molestiae quo placeat velit magni est laborum. Cumque consequatur laborum odio omnis incidunt rerum inventore. Placeat vel provident deleniti sint molestias qui."
+                  },
+                  {
+                      "id": 14,
+                      "name": "Quas laudantium commodi maxime qui tempore dolores.",
+                      "url": "https://www.block.com/magni-numquam-ratione-porro-ut-voluptatem-eos-enim-consequatur",
+                      "description": "Est et architecto sapiente debitis sit et ea. Ut mollitia vel dignissimos eveniet commodi. Ut ipsum maiores sit sunt eos eum."
+                  },
+                  {
+                      "id": 15,
+                      "name": "Est perspiciatis rerum fuga quaerat excepturi.",
+                      "url": "http://www.wisoky.info/omnis-sequi-temporibus-omnis-ut.html",
+                      "description": "Consequatur iusto accusantium fugit sequi est pariatur. Ipsa nihil qui voluptatem culpa soluta quia voluptate tenetur."
+                  }
+              ],
+              "links": {
+                  "first": "http://localhost/api/websites?page=1",
+                  "last": "http://localhost/api/websites?page=2",
+                  "prev": null,
+                  "next": "http://localhost/api/websites?page=2"
+              },
+              "meta": {
+                  "current_page": 1,
+                  "from": 1,
+                  "last_page": 2,
+                  "links": [
+                      {
+                          "url": null,
+                          "label": "&laquo; Previous",
+                          "active": false
+                      },
+                      {
+                          "url": "http://localhost/api/websites?page=1",
+                          "label": "1",
+                          "active": true
+                      },
+                      {
+                          "url": "http://localhost/api/websites?page=2",
+                          "label": "2",
+                          "active": false
+                      },
+                      {
+                          "url": "http://localhost/api/websites?page=2",
+                          "label": "Next &raquo;",
+                          "active": false
+                      }
+                  ],
+                  "path": "http://localhost/api/websites",
+                  "per_page": 15,
+                  "to": 15,
+                  "total": 20
+              }
+          }
+        headers: []
+        description: Success
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/websites
+    metadata:
+      groupName: 'Website management'
+      groupDescription: |-
+
+        APIs for managing websites
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store Website'
+      description: 'This endpoint will create a new website'
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'The name of the website. Must not be greater than 255 characters.'
+        required: true
+        example: 'My Website'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      url:
+        name: url
+        description: 'The URL of the website. Must be a valid URL. Must not be greater than 255 characters.'
+        required: true
+        example: 'https://www.example.com'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      description:
+        name: description
+        description: 'The description of the website.'
+        required: true
+        example: 'This is my website. I hope you like it!'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      name: 'My Website'
+      url: 'https://www.example.com'
+      description: 'This is my website. I hope you like it!'
+    fileParameters: []
+    responses:
+      -
+        status: 201
+        content: |-
+          {
+            "status": "success",
+            "message": "Website successfully created",
+            "data": {
+                "id": 21,
+                "name": "My Website",
+                "url": "https://www.example.com",
+                "description": "This is my website. I hope you like it!"
+            }
+          }
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 400
+        content: |
+          {
+            "message": "The example_field1 is required. (and 2 more errors)",
+            "errors": {
+                "example_field1": ["The example_field1 field is required."],
+                "example_field2": ["The example_field2 field must be numeric."],
+                "example_field3": ["The example_field3 field must be a date."]
+            }
+          }
+        headers: []
+        description: 'Validation Error'
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/websites/{id}'
+    metadata:
+      groupName: 'Website management'
+      groupDescription: |-
+
+        APIs for managing websites
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Show Website'
+      description: 'This endpoint will show the details of the website'
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the website.'
+        required: true
+        example: 20
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: 20
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+              "status": "success",
+              "message": "Website successfully retrieved",
+              "data": {
+                  "id": 21,
+                  "name": "My Website",
+                  "url": "https://www.example.com",
+                  "description": "This is my website. I hope you like it!"
+              }
+          }
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 404
+        content: |
+          {
+            "message": "No query results for model [App\\Models\\ModelName] 1"
+          }
+        headers: []
+        description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/websites/{id}'
+    metadata:
+      groupName: 'Website management'
+      groupDescription: |-
+
+        APIs for managing websites
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update Website'
+      description: 'This endpoint will update a Website'
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the website.'
+        required: true
+        example: 19
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: 19
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'The name of the website. Must not be greater than 255 characters.'
+        required: false
+        example: 'My Website'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      url:
+        name: url
+        description: 'The URL of the website. Must be a valid URL. Must not be greater than 255 characters.'
+        required: false
+        example: 'https://www.example.com'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      description:
+        name: description
+        description: 'The description of the website.'
+        required: false
+        example: 'This is my website. I hope you like it!'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      name: 'My Website'
+      url: 'https://www.example.com'
+      description: 'This is my website. I hope you like it!'
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+            "status": "success",
+            "message": "Website successfully updated",
+            "data": {
+                "id": 21,
+                "name": "My Website edited",
+                "url": "https://www.editedexample.com",
+                "description": "This is my edited website. I hope you like it!"
+            }
+          }
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 400
+        content: |
+          {
+            "message": "The example_field1 is required. (and 2 more errors)",
+            "errors": {
+                "example_field1": ["The example_field1 field is required."],
+                "example_field2": ["The example_field2 field must be numeric."],
+                "example_field3": ["The example_field3 field must be a date."]
+            }
+          }
+        headers: []
+        description: 'Validation Error'
+        custom: []
+      -
+        status: 404
+        content: |
+          {
+            "message": "No query results for model [App\\Models\\ModelName] 1"
+          }
+        headers: []
+        description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/websites/{id}'
+    metadata:
+      groupName: 'Website management'
+      groupDescription: |-
+
+        APIs for managing websites
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete website'
+      description: 'This endpoint will delete a website'
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the website.'
+        required: true
+        example: 10
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: 10
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+            "status": "success",
+            "message": "Website successfully deleted"
+          }
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 404
+        content: |
+          {
+            "message": "No query results for model [App\\Models\\ModelName] 1"
+          }
+        headers: []
+        description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

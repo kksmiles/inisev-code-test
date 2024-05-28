@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "message": "Website successfully updated",
+  "data": {
+      "id": 21,
+      "name": "My Website edited",
+      "url": "https://www.editedexample.com",
+      "description": "This is my edited website. I hope you like it!"
+  }
+}

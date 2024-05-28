@@ -1,0 +1,131 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "website_id": 5,
+            "title": "Et consequatur occaecati hic corrupti maxime in.",
+            "description": "Quo repellat quisquam ut animi quam molestiae sint. Expedita culpa rem quos est. Tempore eveniet accusantium est et non officia."
+        },
+        {
+            "id": 2,
+            "website_id": 9,
+            "title": "Consequatur natus quasi veritatis consequatur.",
+            "description": "Voluptates minima quibusdam et doloribus quod dolorem a. Dolores dolor ea ab excepturi atque sint nisi. Voluptates ea consequatur et explicabo. Tempora id sit occaecati nulla at enim."
+        },
+        {
+            "id": 3,
+            "website_id": 1,
+            "title": "Voluptatem repellat sunt id labore.",
+            "description": "Et veritatis explicabo rem assumenda qui. Repellendus iusto corporis saepe consectetur neque quod reiciendis. Est ad veniam ullam saepe consequatur hic."
+        },
+        {
+            "id": 4,
+            "website_id": 14,
+            "title": "Eum autem voluptates suscipit molestiae voluptatibus ipsum.",
+            "description": "Hic qui asperiores quibusdam incidunt quo. Eligendi omnis illum facilis eum et sit voluptatem. Nemo et laborum rem tempora accusamus. Praesentium sit quo veritatis."
+        },
+        {
+            "id": 5,
+            "website_id": 1,
+            "title": "Corporis non non cum vero.",
+            "description": "Omnis adipisci fuga quia vitae blanditiis placeat occaecati. Rerum ducimus et aliquid enim architecto illum. Iure repudiandae libero repudiandae qui voluptas. Tempora omnis natus consequatur consequatur optio excepturi."
+        },
+        {
+            "id": 6,
+            "website_id": 2,
+            "title": "Excepturi sed fugit omnis quibusdam nesciunt illo dolores.",
+            "description": "Facere consequatur inventore ipsam velit quia eum magnam et. Ea quisquam quae tempore voluptas. Est consequuntur ea ut doloremque."
+        },
+        {
+            "id": 7,
+            "website_id": 5,
+            "title": "Amet odio nulla quis non laboriosam nihil non.",
+            "description": "Sed natus rerum sint blanditiis. Odit id qui animi enim harum. Et et voluptatem ab libero. Eveniet voluptatem ut explicabo dolor. Provident fugiat nostrum quia fugiat quam odio nemo."
+        },
+        {
+            "id": 8,
+            "website_id": 13,
+            "title": "In ipsam dolor soluta quas eligendi.",
+            "description": "Ut qui sint nemo neque consequatur est voluptate. Sint quisquam debitis delectus et. Laboriosam dolorem assumenda non magni odit. Tenetur in necessitatibus dolor ducimus qui et."
+        },
+        {
+            "id": 9,
+            "website_id": 16,
+            "title": "Nobis maxime rerum at voluptatum modi.",
+            "description": "Aliquam rerum esse eos ullam magnam unde voluptas sint. Et vero quis natus quia. Exercitationem quisquam sint rerum sed deleniti quidem quo. Molestias eum dolor ad doloribus voluptas illum. Amet quia tempore ad laudantium."
+        },
+        {
+            "id": 10,
+            "website_id": 18,
+            "title": "Voluptatem autem itaque enim quisquam pariatur.",
+            "description": "Earum maiores pariatur nulla eaque reprehenderit qui quo. Delectus quisquam sunt explicabo voluptate. Quod unde minus qui vitae quam. Blanditiis vel corrupti quaerat ut laboriosam voluptas ut."
+        },
+        {
+            "id": 11,
+            "website_id": 19,
+            "title": "Deleniti harum doloribus culpa ipsa eos qui quod.",
+            "description": "Cum enim enim non. Qui et non ipsa nam tenetur. Id et voluptatum mollitia quidem."
+        },
+        {
+            "id": 12,
+            "website_id": 1,
+            "title": "Nihil totam suscipit recusandae veritatis architecto.",
+            "description": "Et ex harum voluptates nihil soluta dicta qui. Eligendi impedit molestiae sapiente deserunt eveniet et sed aut. Aut et molestiae qui rem harum sint aut. Deserunt praesentium sit sed veniam."
+        },
+        {
+            "id": 13,
+            "website_id": 7,
+            "title": "Odit magni ex omnis et rerum voluptatem expedita.",
+            "description": "Enim eius voluptas libero aut eos. Totam voluptate sed fugiat provident ullam similique optio. Quidem autem adipisci dolores omnis."
+        },
+        {
+            "id": 14,
+            "website_id": 9,
+            "title": "Facere veritatis recusandae sint repellat.",
+            "description": "Possimus at qui ut autem. Minus quisquam ad quia est est. Rerum blanditiis quis modi blanditiis voluptas enim."
+        },
+        {
+            "id": 15,
+            "website_id": 18,
+            "title": "Accusamus qui velit deserunt.",
+            "description": "Voluptas sed blanditiis officia et quas incidunt aperiam. Eius sed voluptatem mollitia dicta quisquam."
+        }
+    ],
+    "links": {
+        "first": "http://localhost/api/posts?page=1",
+        "last": "http://localhost/api/posts?page=2",
+        "prev": null,
+        "next": "http://localhost/api/posts?page=2"
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 2,
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "http://localhost/api/posts?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": "http://localhost/api/posts?page=2",
+                "label": "2",
+                "active": false
+            },
+            {
+                "url": "http://localhost/api/posts?page=2",
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "path": "http://localhost/api/posts",
+        "per_page": 15,
+        "to": 15,
+        "total": 30
+    }
+}

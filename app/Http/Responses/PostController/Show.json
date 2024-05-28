@@ -1,0 +1,16 @@
+{
+    "status": "success",
+    "message": "Post successfully retrieved",
+    "data": {
+        "id": 31,
+        "website_id": 1,
+        "title": "My First Post",
+        "description": "This is my first post. I hope you like it!",
+        "website": {
+            "id": 1,
+            "name": "Sequi voluptates non eaque blanditiis velit blanditiis deserunt.",
+            "url": "http://www.beer.net/nobis-possimus-amet-ut-dolore-aut-debitis",
+            "description": "Aut voluptatem debitis quasi ab deserunt expedita aspernatur. Sed laudantium et ipsam eum quo. Rerum quidem voluptas sapiente et."
+        }
+    }
+}
