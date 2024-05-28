@@ -1,0 +1,614 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "b7bebac3-bf7f-4eb6-b9ad-51fc040e3587",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Post management",
+            "description": "\nAPIs for managing posts",
+            "item": [
+                {
+                    "name": "Index Posts",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/posts"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint will list all posts",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"website_id\": 5,\n            \"title\": \"Et consequatur occaecati hic corrupti maxime in.\",\n            \"description\": \"Quo repellat quisquam ut animi quam molestiae sint. Expedita culpa rem quos est. Tempore eveniet accusantium est et non officia.\"\n        },\n        {\n            \"id\": 2,\n            \"website_id\": 9,\n            \"title\": \"Consequatur natus quasi veritatis consequatur.\",\n            \"description\": \"Voluptates minima quibusdam et doloribus quod dolorem a. Dolores dolor ea ab excepturi atque sint nisi. Voluptates ea consequatur et explicabo. Tempora id sit occaecati nulla at enim.\"\n        },\n        {\n            \"id\": 3,\n            \"website_id\": 1,\n            \"title\": \"Voluptatem repellat sunt id labore.\",\n            \"description\": \"Et veritatis explicabo rem assumenda qui. Repellendus iusto corporis saepe consectetur neque quod reiciendis. Est ad veniam ullam saepe consequatur hic.\"\n        },\n        {\n            \"id\": 4,\n            \"website_id\": 14,\n            \"title\": \"Eum autem voluptates suscipit molestiae voluptatibus ipsum.\",\n            \"description\": \"Hic qui asperiores quibusdam incidunt quo. Eligendi omnis illum facilis eum et sit voluptatem. Nemo et laborum rem tempora accusamus. Praesentium sit quo veritatis.\"\n        },\n        {\n            \"id\": 5,\n            \"website_id\": 1,\n            \"title\": \"Corporis non non cum vero.\",\n            \"description\": \"Omnis adipisci fuga quia vitae blanditiis placeat occaecati. Rerum ducimus et aliquid enim architecto illum. Iure repudiandae libero repudiandae qui voluptas. Tempora omnis natus consequatur consequatur optio excepturi.\"\n        },\n        {\n            \"id\": 6,\n            \"website_id\": 2,\n            \"title\": \"Excepturi sed fugit omnis quibusdam nesciunt illo dolores.\",\n            \"description\": \"Facere consequatur inventore ipsam velit quia eum magnam et. Ea quisquam quae tempore voluptas. Est consequuntur ea ut doloremque.\"\n        },\n        {\n            \"id\": 7,\n            \"website_id\": 5,\n            \"title\": \"Amet odio nulla quis non laboriosam nihil non.\",\n            \"description\": \"Sed natus rerum sint blanditiis. Odit id qui animi enim harum. Et et voluptatem ab libero. Eveniet voluptatem ut explicabo dolor. Provident fugiat nostrum quia fugiat quam odio nemo.\"\n        },\n        {\n            \"id\": 8,\n            \"website_id\": 13,\n            \"title\": \"In ipsam dolor soluta quas eligendi.\",\n            \"description\": \"Ut qui sint nemo neque consequatur est voluptate. Sint quisquam debitis delectus et. Laboriosam dolorem assumenda non magni odit. Tenetur in necessitatibus dolor ducimus qui et.\"\n        },\n        {\n            \"id\": 9,\n            \"website_id\": 16,\n            \"title\": \"Nobis maxime rerum at voluptatum modi.\",\n            \"description\": \"Aliquam rerum esse eos ullam magnam unde voluptas sint. Et vero quis natus quia. Exercitationem quisquam sint rerum sed deleniti quidem quo. Molestias eum dolor ad doloribus voluptas illum. Amet quia tempore ad laudantium.\"\n        },\n        {\n            \"id\": 10,\n            \"website_id\": 18,\n            \"title\": \"Voluptatem autem itaque enim quisquam pariatur.\",\n            \"description\": \"Earum maiores pariatur nulla eaque reprehenderit qui quo. Delectus quisquam sunt explicabo voluptate. Quod unde minus qui vitae quam. Blanditiis vel corrupti quaerat ut laboriosam voluptas ut.\"\n        },\n        {\n            \"id\": 11,\n            \"website_id\": 19,\n            \"title\": \"Deleniti harum doloribus culpa ipsa eos qui quod.\",\n            \"description\": \"Cum enim enim non. Qui et non ipsa nam tenetur. Id et voluptatum mollitia quidem.\"\n        },\n        {\n            \"id\": 12,\n            \"website_id\": 1,\n            \"title\": \"Nihil totam suscipit recusandae veritatis architecto.\",\n            \"description\": \"Et ex harum voluptates nihil soluta dicta qui. Eligendi impedit molestiae sapiente deserunt eveniet et sed aut. Aut et molestiae qui rem harum sint aut. Deserunt praesentium sit sed veniam.\"\n        },\n        {\n            \"id\": 13,\n            \"website_id\": 7,\n            \"title\": \"Odit magni ex omnis et rerum voluptatem expedita.\",\n            \"description\": \"Enim eius voluptas libero aut eos. Totam voluptate sed fugiat provident ullam similique optio. Quidem autem adipisci dolores omnis.\"\n        },\n        {\n            \"id\": 14,\n            \"website_id\": 9,\n            \"title\": \"Facere veritatis recusandae sint repellat.\",\n            \"description\": \"Possimus at qui ut autem. Minus quisquam ad quia est est. Rerum blanditiis quis modi blanditiis voluptas enim.\"\n        },\n        {\n            \"id\": 15,\n            \"website_id\": 18,\n            \"title\": \"Accusamus qui velit deserunt.\",\n            \"description\": \"Voluptas sed blanditiis officia et quas incidunt aperiam. Eius sed voluptatem mollitia dicta quisquam.\"\n        }\n    ],\n    \"links\": {\n        \"first\": \"http:\/\/localhost\/api\/posts?page=1\",\n        \"last\": \"http:\/\/localhost\/api\/posts?page=2\",\n        \"prev\": null,\n        \"next\": \"http:\/\/localhost\/api\/posts?page=2\"\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 2,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\/\/localhost\/api\/posts?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http:\/\/localhost\/api\/posts?page=2\",\n                \"label\": \"2\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\/\/localhost\/api\/posts?page=2\",\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http:\/\/localhost\/api\/posts\",\n        \"per_page\": 15,\n        \"to\": 15,\n        \"total\": 30\n    }\n}",
+                            "name": "Success"
+                        }
+                    ]
+                },
+                {
+                    "name": "Store Post",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/posts"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"website_id\":1,\"title\":\"My First Post\",\"description\":\"This is my first post. I hope you like it!\"}"
+                        },
+                        "description": "This endpoint will create a new post",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 201,
+                            "body": "{\n  \"status\": \"success\",\n  \"message\": \"Post successfully created\",\n  \"data\": {\n      \"id\": 31,\n      \"website_id\": 1,\n      \"title\": \"My First Post\",\n      \"description\": \"This is my first post. I hope you like it!\"\n  }\n}",
+                            "name": "Success"
+                        },
+                        {
+                            "header": [],
+                            "code": 400,
+                            "body": "{\n  \"message\": \"The example_field1 is required. (and 2 more errors)\",\n  \"errors\": {\n      \"example_field1\": [\"The example_field1 field is required.\"],\n      \"example_field2\": [\"The example_field2 field must be numeric.\"],\n      \"example_field3\": [\"The example_field3 field must be a date.\"]\n  }\n}\n",
+                            "name": "Validation Error"
+                        }
+                    ]
+                },
+                {
+                    "name": "Show Post",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/posts\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "14",
+                                    "description": "The ID of the post."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint will show the details of the post",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n    \"status\": \"success\",\n    \"message\": \"Post successfully retrieved\",\n    \"data\": {\n        \"id\": 31,\n        \"website_id\": 1,\n        \"title\": \"My First Post\",\n        \"description\": \"This is my first post. I hope you like it!\",\n        \"website\": {\n            \"id\": 1,\n            \"name\": \"Sequi voluptates non eaque blanditiis velit blanditiis deserunt.\",\n            \"url\": \"http:\/\/www.beer.net\/nobis-possimus-amet-ut-dolore-aut-debitis\",\n            \"description\": \"Aut voluptatem debitis quasi ab deserunt expedita aspernatur. Sed laudantium et ipsam eum quo. Rerum quidem voluptas sapiente et.\"\n        }\n    }\n}",
+                            "name": "Success"
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n  \"message\": \"No query results for model [App\\\\Models\\\\ModelName] 1\"\n}\n",
+                            "name": "Not Found"
+                        }
+                    ]
+                },
+                {
+                    "name": "Update Post",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/posts\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "17",
+                                    "description": "The ID of the post."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\":\"My First Post\",\"description\":\"This is my first post. I hope you like it!\"}"
+                        },
+                        "description": "This endpoint will update a Post",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n  \"status\": \"success\",\n  \"message\": \"Post successfully updated\",\n  \"data\": {\n      \"id\": 31,\n      \"website_id\": 1,\n      \"title\": \"My First Post edited\",\n      \"description\": \"This is my first post. I hope you like it! edited!\"\n  }\n}",
+                            "name": "Success"
+                        },
+                        {
+                            "header": [],
+                            "code": 400,
+                            "body": "{\n  \"message\": \"The example_field1 is required. (and 2 more errors)\",\n  \"errors\": {\n      \"example_field1\": [\"The example_field1 field is required.\"],\n      \"example_field2\": [\"The example_field2 field must be numeric.\"],\n      \"example_field3\": [\"The example_field3 field must be a date.\"]\n  }\n}\n",
+                            "name": "Validation Error"
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n  \"message\": \"No query results for model [App\\\\Models\\\\ModelName] 1\"\n}\n",
+                            "name": "Not Found"
+                        }
+                    ]
+                },
+                {
+                    "name": "Delete post",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/posts\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "7",
+                                    "description": "The ID of the post."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint will delete a post",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n  \"status\": \"success\",\n  \"message\": \"Post successfully deleted\"\n}",
+                            "name": "Success"
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n  \"message\": \"No query results for model [App\\\\Models\\\\ModelName] 1\"\n}\n",
+                            "name": "Not Found"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Subscription management",
+            "description": "\nAPIs for managing subscriptions",
+            "item": [
+                {
+                    "name": "Subscribe",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/websites\/:website_id\/subscribe",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/websites\/:website_id\/subscribe",
+                            "variable": [
+                                {
+                                    "id": "website_id",
+                                    "key": "website_id",
+                                    "value": "10",
+                                    "description": "The ID of the website."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"user_email\":\"user@example.com\"}"
+                        },
+                        "description": "This endpoint will subscribe the user to the website",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n    \"status\": \"success\",\n    \"message\": \"Successfully subscribed\"\n}",
+                            "name": "Success"
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n  \"message\": \"No query results for model [App\\\\Models\\\\ModelName] 1\"\n}\n",
+                            "name": "Not Found"
+                        }
+                    ]
+                },
+                {
+                    "name": "Unsubscribe",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/websites\/:website_id\/unsubscribe",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/websites\/:website_id\/unsubscribe",
+                            "variable": [
+                                {
+                                    "id": "website_id",
+                                    "key": "website_id",
+                                    "value": "13",
+                                    "description": "The ID of the website."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"user_email\":\"user@example.com\"}"
+                        },
+                        "description": "This endpoint will subscribe the user to the website",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n    \"status\": \"success\",\n    \"message\": \"Successfully unsubscribed\"\n}",
+                            "name": "Success"
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n  \"message\": \"No query results for model [App\\\\Models\\\\ModelName] 1\"\n}\n",
+                            "name": "Not Found"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Website management",
+            "description": "\nAPIs for managing websites",
+            "item": [
+                {
+                    "name": "Index Websites",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/websites",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/websites"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint will list all websites",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Sequi voluptates non eaque blanditiis velit blanditiis deserunt.\",\n            \"url\": \"http:\/\/www.beer.net\/nobis-possimus-amet-ut-dolore-aut-debitis\",\n            \"description\": \"Aut voluptatem debitis quasi ab deserunt expedita aspernatur. Sed laudantium et ipsam eum quo. Rerum quidem voluptas sapiente et.\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Perspiciatis reprehenderit sint rem asperiores.\",\n            \"url\": \"https:\/\/kutch.net\/ratione-quod-hic-beatae.html\",\n            \"description\": \"Ullam dolorem et consequatur dicta est aut dolor. Doloribus qui ut perferendis sint quidem doloremque quas ratione. Enim et voluptas explicabo ut error. Recusandae et eum est quo accusamus vero maiores.\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Accusamus et aut et ratione et.\",\n            \"url\": \"http:\/\/dubuque.net\/\",\n            \"description\": \"Illum magni et quod omnis et ea. Repellat ullam consectetur et aliquid animi sint. Vel illum tempore mollitia et quia qui est. Ut non et labore saepe provident in doloremque nostrum.\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Qui sed quibusdam consequatur dolores illo id.\",\n            \"url\": \"http:\/\/steuber.com\/qui-facilis-temporibus-earum-minus-eaque-est\",\n            \"description\": \"Aliquam recusandae ab eligendi inventore rem odio. Nulla totam consectetur in non excepturi.\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Qui officia sit nam commodi neque voluptatem.\",\n            \"url\": \"http:\/\/hauck.net\/aut-corporis-odit-aliquam-repellendus-inventore\",\n            \"description\": \"In in veritatis alias odio. Sapiente vel consequatur asperiores eius possimus quia eaque minus. Consequatur voluptates distinctio cumque aut totam sit ad fugiat.\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Aliquam impedit et eaque non inventore.\",\n            \"url\": \"http:\/\/hammes.com\/\",\n            \"description\": \"Vel nihil rem quia deserunt libero. Impedit non odio aperiam corrupti voluptatibus expedita. Deserunt in consequatur tenetur est consequatur. Rerum vel nihil tempore qui. Delectus rerum occaecati ratione repudiandae ut.\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Repudiandae quam vel assumenda voluptatem iure facere.\",\n            \"url\": \"http:\/\/www.legros.net\/deleniti-non-aut-corporis-magnam-sunt-optio.html\",\n            \"description\": \"Maxime ex saepe maiores magnam porro ut est. Ut quasi dolor exercitationem eaque.\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Autem eum repellendus qui et necessitatibus.\",\n            \"url\": \"http:\/\/kessler.com\/id-enim-provident-quo-repellendus-iste\",\n            \"description\": \"Ut sequi atque molestias magnam qui. Soluta voluptatem quibusdam ut accusamus quia dolorem asperiores quam. Ipsam aspernatur id ipsam aperiam sed. Dolor officiis natus fugiat repellat.\"\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Nulla quia est esse esse ducimus laudantium.\",\n            \"url\": \"http:\/\/www.rosenbaum.com\/ut-velit-placeat-qui-quo-vel-magnam-ullam.html\",\n            \"description\": \"Voluptatibus aut deleniti aliquid omnis magni odio repellat. Earum omnis molestiae aut odio excepturi magni nam cum. Amet exercitationem eius expedita maxime recusandae. Animi et voluptatem consequuntur sint accusantium tenetur et.\"\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Dolore beatae quo architecto natus nemo et nulla.\",\n            \"url\": \"http:\/\/corkery.com\/\",\n            \"description\": \"Vitae neque praesentium et temporibus blanditiis quia. Eos maiores accusamus voluptas non eius. Earum sapiente molestias voluptatum aut sed.\"\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Odit est delectus et et architecto doloremque.\",\n            \"url\": \"http:\/\/gusikowski.org\/modi-corporis-adipisci-veniam-ut-qui.html\",\n            \"description\": \"Aut qui doloribus iusto. Dolorem deleniti aperiam recusandae. Cum et in pariatur voluptatum. Iusto est autem sunt sit sit et aut quod.\"\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Aperiam blanditiis et dolor atque omnis tempore qui.\",\n            \"url\": \"https:\/\/www.walter.com\/accusamus-dolorem-dolor-est-in-quis-alias\",\n            \"description\": \"Omnis consequatur deserunt voluptatem ex vel unde. Aliquam accusamus expedita animi voluptatem expedita dolores. Expedita voluptas nihil vitae hic voluptatem.\"\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Reiciendis magnam repudiandae cum cum non libero non et.\",\n            \"url\": \"http:\/\/www.kutch.com\/vero-earum-sit-consequatur-totam-sequi-iusto\",\n            \"description\": \"Sed molestiae quo placeat velit magni est laborum. Cumque consequatur laborum odio omnis incidunt rerum inventore. Placeat vel provident deleniti sint molestias qui.\"\n        },\n        {\n            \"id\": 14,\n            \"name\": \"Quas laudantium commodi maxime qui tempore dolores.\",\n            \"url\": \"https:\/\/www.block.com\/magni-numquam-ratione-porro-ut-voluptatem-eos-enim-consequatur\",\n            \"description\": \"Est et architecto sapiente debitis sit et ea. Ut mollitia vel dignissimos eveniet commodi. Ut ipsum maiores sit sunt eos eum.\"\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Est perspiciatis rerum fuga quaerat excepturi.\",\n            \"url\": \"http:\/\/www.wisoky.info\/omnis-sequi-temporibus-omnis-ut.html\",\n            \"description\": \"Consequatur iusto accusantium fugit sequi est pariatur. Ipsa nihil qui voluptatem culpa soluta quia voluptate tenetur.\"\n        }\n    ],\n    \"links\": {\n        \"first\": \"http:\/\/localhost\/api\/websites?page=1\",\n        \"last\": \"http:\/\/localhost\/api\/websites?page=2\",\n        \"prev\": null,\n        \"next\": \"http:\/\/localhost\/api\/websites?page=2\"\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 2,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\/\/localhost\/api\/websites?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http:\/\/localhost\/api\/websites?page=2\",\n                \"label\": \"2\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\/\/localhost\/api\/websites?page=2\",\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http:\/\/localhost\/api\/websites\",\n        \"per_page\": 15,\n        \"to\": 15,\n        \"total\": 20\n    }\n}",
+                            "name": "Success"
+                        }
+                    ]
+                },
+                {
+                    "name": "Store Website",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/websites",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/websites"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"My Website\",\"url\":\"https:\\\/\\\/www.example.com\",\"description\":\"This is my website. I hope you like it!\"}"
+                        },
+                        "description": "This endpoint will create a new website",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 201,
+                            "body": "{\n  \"status\": \"success\",\n  \"message\": \"Website successfully created\",\n  \"data\": {\n      \"id\": 21,\n      \"name\": \"My Website\",\n      \"url\": \"https:\/\/www.example.com\",\n      \"description\": \"This is my website. I hope you like it!\"\n  }\n}",
+                            "name": "Success"
+                        },
+                        {
+                            "header": [],
+                            "code": 400,
+                            "body": "{\n  \"message\": \"The example_field1 is required. (and 2 more errors)\",\n  \"errors\": {\n      \"example_field1\": [\"The example_field1 field is required.\"],\n      \"example_field2\": [\"The example_field2 field must be numeric.\"],\n      \"example_field3\": [\"The example_field3 field must be a date.\"]\n  }\n}\n",
+                            "name": "Validation Error"
+                        }
+                    ]
+                },
+                {
+                    "name": "Show Website",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/websites\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/websites\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "18",
+                                    "description": "The ID of the website."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint will show the details of the website",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n    \"status\": \"success\",\n    \"message\": \"Website successfully retrieved\",\n    \"data\": {\n        \"id\": 21,\n        \"name\": \"My Website\",\n        \"url\": \"https:\/\/www.example.com\",\n        \"description\": \"This is my website. I hope you like it!\"\n    }\n}",
+                            "name": "Success"
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n  \"message\": \"No query results for model [App\\\\Models\\\\ModelName] 1\"\n}\n",
+                            "name": "Not Found"
+                        }
+                    ]
+                },
+                {
+                    "name": "Update Website",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/websites\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/websites\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "20",
+                                    "description": "The ID of the website."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"My Website\",\"url\":\"https:\\\/\\\/www.example.com\",\"description\":\"This is my website. I hope you like it!\"}"
+                        },
+                        "description": "This endpoint will update a Website",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n  \"status\": \"success\",\n  \"message\": \"Website successfully updated\",\n  \"data\": {\n      \"id\": 21,\n      \"name\": \"My Website edited\",\n      \"url\": \"https:\/\/www.editedexample.com\",\n      \"description\": \"This is my edited website. I hope you like it!\"\n  }\n}",
+                            "name": "Success"
+                        },
+                        {
+                            "header": [],
+                            "code": 400,
+                            "body": "{\n  \"message\": \"The example_field1 is required. (and 2 more errors)\",\n  \"errors\": {\n      \"example_field1\": [\"The example_field1 field is required.\"],\n      \"example_field2\": [\"The example_field2 field must be numeric.\"],\n      \"example_field3\": [\"The example_field3 field must be a date.\"]\n  }\n}\n",
+                            "name": "Validation Error"
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n  \"message\": \"No query results for model [App\\\\Models\\\\ModelName] 1\"\n}\n",
+                            "name": "Not Found"
+                        }
+                    ]
+                },
+                {
+                    "name": "Delete website",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/websites\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/websites\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "7",
+                                    "description": "The ID of the website."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint will delete a website",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n  \"status\": \"success\",\n  \"message\": \"Website successfully deleted\"\n}",
+                            "name": "Success"
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n  \"message\": \"No query results for model [App\\\\Models\\\\ModelName] 1\"\n}\n",
+                            "name": "Not Found"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

@@ -42,7 +42,7 @@ class WebsiteController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'status' => 'error',
-                'message' => 'Something went wrong : ' . $e->getMessage(),
+                'message' => 'Something went wrong : '.$e->getMessage(),
             ], 500);
         }
 
@@ -87,7 +87,7 @@ class WebsiteController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'status' => 'error',
-                'message' => 'Something went wrong : ' . $e->getMessage(),
+                'message' => 'Something went wrong : '.$e->getMessage(),
             ], 500);
         }
 
@@ -113,7 +113,7 @@ class WebsiteController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'status' => 'error',
-                'message' => 'Something went wrong : ' . $e->getMessage(),
+                'message' => 'Something went wrong : '.$e->getMessage(),
             ], 500);
         }
 

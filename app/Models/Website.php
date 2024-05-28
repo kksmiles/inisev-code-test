@@ -12,7 +12,7 @@ class Website extends Model
     protected $fillable = [
         'name',
         'url',
-        'description'
+        'description',
     ];
 
     public function posts()
@@ -25,5 +25,10 @@ class Website extends Model
         return $this->belongsToMany(User::class, UserWebsiteSubscription::class)
             ->withPivot('is_subscribed', 'subscribed_at', 'unsubscribed_at')
             ->withTimestamps();
+    }
+
+    public function subscribed_users()
+    {
+        return $this->users()->wherePivot('is_subscribed', true);
     }
 }

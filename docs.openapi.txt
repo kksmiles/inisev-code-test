@@ -1,0 +1,1385 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost'
+paths:
+  /api/posts:
+    get:
+      summary: 'Index Posts'
+      operationId: indexPosts
+      description: 'This endpoint will list all posts'
+      parameters: []
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    -
+                      id: 1
+                      website_id: 5
+                      title: 'Et consequatur occaecati hic corrupti maxime in.'
+                      description: 'Quo repellat quisquam ut animi quam molestiae sint. Expedita culpa rem quos est. Tempore eveniet accusantium est et non officia.'
+                    -
+                      id: 2
+                      website_id: 9
+                      title: 'Consequatur natus quasi veritatis consequatur.'
+                      description: 'Voluptates minima quibusdam et doloribus quod dolorem a. Dolores dolor ea ab excepturi atque sint nisi. Voluptates ea consequatur et explicabo. Tempora id sit occaecati nulla at enim.'
+                    -
+                      id: 3
+                      website_id: 1
+                      title: 'Voluptatem repellat sunt id labore.'
+                      description: 'Et veritatis explicabo rem assumenda qui. Repellendus iusto corporis saepe consectetur neque quod reiciendis. Est ad veniam ullam saepe consequatur hic.'
+                    -
+                      id: 4
+                      website_id: 14
+                      title: 'Eum autem voluptates suscipit molestiae voluptatibus ipsum.'
+                      description: 'Hic qui asperiores quibusdam incidunt quo. Eligendi omnis illum facilis eum et sit voluptatem. Nemo et laborum rem tempora accusamus. Praesentium sit quo veritatis.'
+                    -
+                      id: 5
+                      website_id: 1
+                      title: 'Corporis non non cum vero.'
+                      description: 'Omnis adipisci fuga quia vitae blanditiis placeat occaecati. Rerum ducimus et aliquid enim architecto illum. Iure repudiandae libero repudiandae qui voluptas. Tempora omnis natus consequatur consequatur optio excepturi.'
+                    -
+                      id: 6
+                      website_id: 2
+                      title: 'Excepturi sed fugit omnis quibusdam nesciunt illo dolores.'
+                      description: 'Facere consequatur inventore ipsam velit quia eum magnam et. Ea quisquam quae tempore voluptas. Est consequuntur ea ut doloremque.'
+                    -
+                      id: 7
+                      website_id: 5
+                      title: 'Amet odio nulla quis non laboriosam nihil non.'
+                      description: 'Sed natus rerum sint blanditiis. Odit id qui animi enim harum. Et et voluptatem ab libero. Eveniet voluptatem ut explicabo dolor. Provident fugiat nostrum quia fugiat quam odio nemo.'
+                    -
+                      id: 8
+                      website_id: 13
+                      title: 'In ipsam dolor soluta quas eligendi.'
+                      description: 'Ut qui sint nemo neque consequatur est voluptate. Sint quisquam debitis delectus et. Laboriosam dolorem assumenda non magni odit. Tenetur in necessitatibus dolor ducimus qui et.'
+                    -
+                      id: 9
+                      website_id: 16
+                      title: 'Nobis maxime rerum at voluptatum modi.'
+                      description: 'Aliquam rerum esse eos ullam magnam unde voluptas sint. Et vero quis natus quia. Exercitationem quisquam sint rerum sed deleniti quidem quo. Molestias eum dolor ad doloribus voluptas illum. Amet quia tempore ad laudantium.'
+                    -
+                      id: 10
+                      website_id: 18
+                      title: 'Voluptatem autem itaque enim quisquam pariatur.'
+                      description: 'Earum maiores pariatur nulla eaque reprehenderit qui quo. Delectus quisquam sunt explicabo voluptate. Quod unde minus qui vitae quam. Blanditiis vel corrupti quaerat ut laboriosam voluptas ut.'
+                    -
+                      id: 11
+                      website_id: 19
+                      title: 'Deleniti harum doloribus culpa ipsa eos qui quod.'
+                      description: 'Cum enim enim non. Qui et non ipsa nam tenetur. Id et voluptatum mollitia quidem.'
+                    -
+                      id: 12
+                      website_id: 1
+                      title: 'Nihil totam suscipit recusandae veritatis architecto.'
+                      description: 'Et ex harum voluptates nihil soluta dicta qui. Eligendi impedit molestiae sapiente deserunt eveniet et sed aut. Aut et molestiae qui rem harum sint aut. Deserunt praesentium sit sed veniam.'
+                    -
+                      id: 13
+                      website_id: 7
+                      title: 'Odit magni ex omnis et rerum voluptatem expedita.'
+                      description: 'Enim eius voluptas libero aut eos. Totam voluptate sed fugiat provident ullam similique optio. Quidem autem adipisci dolores omnis.'
+                    -
+                      id: 14
+                      website_id: 9
+                      title: 'Facere veritatis recusandae sint repellat.'
+                      description: 'Possimus at qui ut autem. Minus quisquam ad quia est est. Rerum blanditiis quis modi blanditiis voluptas enim.'
+                    -
+                      id: 15
+                      website_id: 18
+                      title: 'Accusamus qui velit deserunt.'
+                      description: 'Voluptas sed blanditiis officia et quas incidunt aperiam. Eius sed voluptatem mollitia dicta quisquam.'
+                  links:
+                    first: 'http://localhost/api/posts?page=1'
+                    last: 'http://localhost/api/posts?page=2'
+                    prev: null
+                    next: 'http://localhost/api/posts?page=2'
+                  meta:
+                    current_page: 1
+                    from: 1
+                    last_page: 2
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        active: false
+                      -
+                        url: 'http://localhost/api/posts?page=1'
+                        label: '1'
+                        active: true
+                      -
+                        url: 'http://localhost/api/posts?page=2'
+                        label: '2'
+                        active: false
+                      -
+                        url: 'http://localhost/api/posts?page=2'
+                        label: 'Next &raquo;'
+                        active: false
+                    path: 'http://localhost/api/posts'
+                    per_page: 15
+                    to: 15
+                    total: 30
+                properties:
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 1
+                        website_id: 5
+                        title: 'Et consequatur occaecati hic corrupti maxime in.'
+                        description: 'Quo repellat quisquam ut animi quam molestiae sint. Expedita culpa rem quos est. Tempore eveniet accusantium est et non officia.'
+                      -
+                        id: 2
+                        website_id: 9
+                        title: 'Consequatur natus quasi veritatis consequatur.'
+                        description: 'Voluptates minima quibusdam et doloribus quod dolorem a. Dolores dolor ea ab excepturi atque sint nisi. Voluptates ea consequatur et explicabo. Tempora id sit occaecati nulla at enim.'
+                      -
+                        id: 3
+                        website_id: 1
+                        title: 'Voluptatem repellat sunt id labore.'
+                        description: 'Et veritatis explicabo rem assumenda qui. Repellendus iusto corporis saepe consectetur neque quod reiciendis. Est ad veniam ullam saepe consequatur hic.'
+                      -
+                        id: 4
+                        website_id: 14
+                        title: 'Eum autem voluptates suscipit molestiae voluptatibus ipsum.'
+                        description: 'Hic qui asperiores quibusdam incidunt quo. Eligendi omnis illum facilis eum et sit voluptatem. Nemo et laborum rem tempora accusamus. Praesentium sit quo veritatis.'
+                      -
+                        id: 5
+                        website_id: 1
+                        title: 'Corporis non non cum vero.'
+                        description: 'Omnis adipisci fuga quia vitae blanditiis placeat occaecati. Rerum ducimus et aliquid enim architecto illum. Iure repudiandae libero repudiandae qui voluptas. Tempora omnis natus consequatur consequatur optio excepturi.'
+                      -
+                        id: 6
+                        website_id: 2
+                        title: 'Excepturi sed fugit omnis quibusdam nesciunt illo dolores.'
+                        description: 'Facere consequatur inventore ipsam velit quia eum magnam et. Ea quisquam quae tempore voluptas. Est consequuntur ea ut doloremque.'
+                      -
+                        id: 7
+                        website_id: 5
+                        title: 'Amet odio nulla quis non laboriosam nihil non.'
+                        description: 'Sed natus rerum sint blanditiis. Odit id qui animi enim harum. Et et voluptatem ab libero. Eveniet voluptatem ut explicabo dolor. Provident fugiat nostrum quia fugiat quam odio nemo.'
+                      -
+                        id: 8
+                        website_id: 13
+                        title: 'In ipsam dolor soluta quas eligendi.'
+                        description: 'Ut qui sint nemo neque consequatur est voluptate. Sint quisquam debitis delectus et. Laboriosam dolorem assumenda non magni odit. Tenetur in necessitatibus dolor ducimus qui et.'
+                      -
+                        id: 9
+                        website_id: 16
+                        title: 'Nobis maxime rerum at voluptatum modi.'
+                        description: 'Aliquam rerum esse eos ullam magnam unde voluptas sint. Et vero quis natus quia. Exercitationem quisquam sint rerum sed deleniti quidem quo. Molestias eum dolor ad doloribus voluptas illum. Amet quia tempore ad laudantium.'
+                      -
+                        id: 10
+                        website_id: 18
+                        title: 'Voluptatem autem itaque enim quisquam pariatur.'
+                        description: 'Earum maiores pariatur nulla eaque reprehenderit qui quo. Delectus quisquam sunt explicabo voluptate. Quod unde minus qui vitae quam. Blanditiis vel corrupti quaerat ut laboriosam voluptas ut.'
+                      -
+                        id: 11
+                        website_id: 19
+                        title: 'Deleniti harum doloribus culpa ipsa eos qui quod.'
+                        description: 'Cum enim enim non. Qui et non ipsa nam tenetur. Id et voluptatum mollitia quidem.'
+                      -
+                        id: 12
+                        website_id: 1
+                        title: 'Nihil totam suscipit recusandae veritatis architecto.'
+                        description: 'Et ex harum voluptates nihil soluta dicta qui. Eligendi impedit molestiae sapiente deserunt eveniet et sed aut. Aut et molestiae qui rem harum sint aut. Deserunt praesentium sit sed veniam.'
+                      -
+                        id: 13
+                        website_id: 7
+                        title: 'Odit magni ex omnis et rerum voluptatem expedita.'
+                        description: 'Enim eius voluptas libero aut eos. Totam voluptate sed fugiat provident ullam similique optio. Quidem autem adipisci dolores omnis.'
+                      -
+                        id: 14
+                        website_id: 9
+                        title: 'Facere veritatis recusandae sint repellat.'
+                        description: 'Possimus at qui ut autem. Minus quisquam ad quia est est. Rerum blanditiis quis modi blanditiis voluptas enim.'
+                      -
+                        id: 15
+                        website_id: 18
+                        title: 'Accusamus qui velit deserunt.'
+                        description: 'Voluptas sed blanditiis officia et quas incidunt aperiam. Eius sed voluptatem mollitia dicta quisquam.'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        website_id:
+                          type: integer
+                          example: 5
+                        title:
+                          type: string
+                          example: 'Et consequatur occaecati hic corrupti maxime in.'
+                        description:
+                          type: string
+                          example: 'Quo repellat quisquam ut animi quam molestiae sint. Expedita culpa rem quos est. Tempore eveniet accusantium est et non officia.'
+                  links:
+                    type: object
+                    properties:
+                      first:
+                        type: string
+                        example: 'http://localhost/api/posts?page=1'
+                      last:
+                        type: string
+                        example: 'http://localhost/api/posts?page=2'
+                      prev:
+                        type: string
+                        example: null
+                      next:
+                        type: string
+                        example: 'http://localhost/api/posts?page=2'
+                  meta:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 2
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            active: false
+                          -
+                            url: 'http://localhost/api/posts?page=1'
+                            label: '1'
+                            active: true
+                          -
+                            url: 'http://localhost/api/posts?page=2'
+                            label: '2'
+                            active: false
+                          -
+                            url: 'http://localhost/api/posts?page=2'
+                            label: 'Next &raquo;'
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            active:
+                              type: boolean
+                              example: false
+                      path:
+                        type: string
+                        example: 'http://localhost/api/posts'
+                      per_page:
+                        type: integer
+                        example: 15
+                      to:
+                        type: integer
+                        example: 15
+                      total:
+                        type: integer
+                        example: 30
+      tags:
+        - 'Post management'
+      security: []
+    post:
+      summary: 'Store Post'
+      operationId: storePost
+      description: 'This endpoint will create a new post'
+      parameters: []
+      responses:
+        201:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: success
+                  message: 'Post successfully created'
+                  data:
+                    id: 31
+                    website_id: 1
+                    title: 'My First Post'
+                    description: 'This is my first post. I hope you like it!'
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: 'Post successfully created'
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 31
+                      website_id:
+                        type: integer
+                        example: 1
+                      title:
+                        type: string
+                        example: 'My First Post'
+                      description:
+                        type: string
+                        example: 'This is my first post. I hope you like it!'
+        400:
+          description: 'Validation Error'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'The example_field1 is required. (and 2 more errors)'
+                  errors:
+                    example_field1:
+                      - 'The example_field1 field is required.'
+                    example_field2:
+                      - 'The example_field2 field must be numeric.'
+                    example_field3:
+                      - 'The example_field3 field must be a date.'
+                properties:
+                  message:
+                    type: string
+                    example: 'The example_field1 is required. (and 2 more errors)'
+                  errors:
+                    type: object
+                    properties:
+                      example_field1:
+                        type: array
+                        example:
+                          - 'The example_field1 field is required.'
+                        items:
+                          type: string
+                      example_field2:
+                        type: array
+                        example:
+                          - 'The example_field2 field must be numeric.'
+                        items:
+                          type: string
+                      example_field3:
+                        type: array
+                        example:
+                          - 'The example_field3 field must be a date.'
+                        items:
+                          type: string
+      tags:
+        - 'Post management'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                website_id:
+                  type: integer
+                  description: 'The ID of the website to which the post belongs.'
+                  example: 1
+                title:
+                  type: string
+                  description: 'The title of the post. Must not be greater than 255 characters.'
+                  example: 'My First Post'
+                description:
+                  type: string
+                  description: 'The description of the post.'
+                  example: 'This is my first post. I hope you like it!'
+              required:
+                - website_id
+                - title
+                - description
+      security: []
+  '/api/posts/{id}':
+    get:
+      summary: 'Show Post'
+      operationId: showPost
+      description: 'This endpoint will show the details of the post'
+      parameters: []
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: success
+                  message: 'Post successfully retrieved'
+                  data:
+                    id: 31
+                    website_id: 1
+                    title: 'My First Post'
+                    description: 'This is my first post. I hope you like it!'
+                    website:
+                      id: 1
+                      name: 'Sequi voluptates non eaque blanditiis velit blanditiis deserunt.'
+                      url: 'http://www.beer.net/nobis-possimus-amet-ut-dolore-aut-debitis'
+                      description: 'Aut voluptatem debitis quasi ab deserunt expedita aspernatur. Sed laudantium et ipsam eum quo. Rerum quidem voluptas sapiente et.'
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: 'Post successfully retrieved'
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 31
+                      website_id:
+                        type: integer
+                        example: 1
+                      title:
+                        type: string
+                        example: 'My First Post'
+                      description:
+                        type: string
+                        example: 'This is my first post. I hope you like it!'
+                      website:
+                        type: object
+                        properties:
+                          id:
+                            type: integer
+                            example: 1
+                          name:
+                            type: string
+                            example: 'Sequi voluptates non eaque blanditiis velit blanditiis deserunt.'
+                          url:
+                            type: string
+                            example: 'http://www.beer.net/nobis-possimus-amet-ut-dolore-aut-debitis'
+                          description:
+                            type: string
+                            example: 'Aut voluptatem debitis quasi ab deserunt expedita aspernatur. Sed laudantium et ipsam eum quo. Rerum quidem voluptas sapiente et.'
+        404:
+          description: 'Not Found'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'No query results for model [App\Models\ModelName] 1'
+                properties:
+                  message:
+                    type: string
+                    example: 'No query results for model [App\Models\ModelName] 1'
+      tags:
+        - 'Post management'
+      security: []
+    put:
+      summary: 'Update Post'
+      operationId: updatePost
+      description: 'This endpoint will update a Post'
+      parameters: []
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: success
+                  message: 'Post successfully updated'
+                  data:
+                    id: 31
+                    website_id: 1
+                    title: 'My First Post edited'
+                    description: 'This is my first post. I hope you like it! edited!'
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: 'Post successfully updated'
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 31
+                      website_id:
+                        type: integer
+                        example: 1
+                      title:
+                        type: string
+                        example: 'My First Post edited'
+                      description:
+                        type: string
+                        example: 'This is my first post. I hope you like it! edited!'
+        400:
+          description: 'Validation Error'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'The example_field1 is required. (and 2 more errors)'
+                  errors:
+                    example_field1:
+                      - 'The example_field1 field is required.'
+                    example_field2:
+                      - 'The example_field2 field must be numeric.'
+                    example_field3:
+                      - 'The example_field3 field must be a date.'
+                properties:
+                  message:
+                    type: string
+                    example: 'The example_field1 is required. (and 2 more errors)'
+                  errors:
+                    type: object
+                    properties:
+                      example_field1:
+                        type: array
+                        example:
+                          - 'The example_field1 field is required.'
+                        items:
+                          type: string
+                      example_field2:
+                        type: array
+                        example:
+                          - 'The example_field2 field must be numeric.'
+                        items:
+                          type: string
+                      example_field3:
+                        type: array
+                        example:
+                          - 'The example_field3 field must be a date.'
+                        items:
+                          type: string
+        404:
+          description: 'Not Found'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'No query results for model [App\Models\ModelName] 1'
+                properties:
+                  message:
+                    type: string
+                    example: 'No query results for model [App\Models\ModelName] 1'
+      tags:
+        - 'Post management'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: 'The title of the post. Must not be greater than 255 characters.'
+                  example: 'My First Post'
+                description:
+                  type: string
+                  description: 'The description of the post.'
+                  example: 'This is my first post. I hope you like it!'
+      security: []
+    delete:
+      summary: 'Delete post'
+      operationId: deletePost
+      description: 'This endpoint will delete a post'
+      parameters: []
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: success
+                  message: 'Post successfully deleted'
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: 'Post successfully deleted'
+        404:
+          description: 'Not Found'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'No query results for model [App\Models\ModelName] 1'
+                properties:
+                  message:
+                    type: string
+                    example: 'No query results for model [App\Models\ModelName] 1'
+      tags:
+        - 'Post management'
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the post.'
+        example: 14
+        required: true
+        schema:
+          type: integer
+  '/api/websites/{website_id}/subscribe':
+    put:
+      summary: Subscribe
+      operationId: subscribe
+      description: 'This endpoint will subscribe the user to the website'
+      parameters: []
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: success
+                  message: 'Successfully subscribed'
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: 'Successfully subscribed'
+        404:
+          description: 'Not Found'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'No query results for model [App\Models\ModelName] 1'
+                properties:
+                  message:
+                    type: string
+                    example: 'No query results for model [App\Models\ModelName] 1'
+      tags:
+        - 'Subscription management'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_email:
+                  type: string
+                  description: 'The email of the user. Must be a valid email address.'
+                  example: user@example.com
+              required:
+                - user_email
+      security: []
+    parameters:
+      -
+        in: path
+        name: website_id
+        description: 'The ID of the website.'
+        example: 10
+        required: true
+        schema:
+          type: integer
+  '/api/websites/{website_id}/unsubscribe':
+    put:
+      summary: Unsubscribe
+      operationId: unsubscribe
+      description: 'This endpoint will subscribe the user to the website'
+      parameters: []
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: success
+                  message: 'Successfully unsubscribed'
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: 'Successfully unsubscribed'
+        404:
+          description: 'Not Found'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'No query results for model [App\Models\ModelName] 1'
+                properties:
+                  message:
+                    type: string
+                    example: 'No query results for model [App\Models\ModelName] 1'
+      tags:
+        - 'Subscription management'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_email:
+                  type: string
+                  description: 'The email of the user. Must be a valid email address.'
+                  example: user@example.com
+              required:
+                - user_email
+      security: []
+    parameters:
+      -
+        in: path
+        name: website_id
+        description: 'The ID of the website.'
+        example: 13
+        required: true
+        schema:
+          type: integer
+  /api/websites:
+    get:
+      summary: 'Index Websites'
+      operationId: indexWebsites
+      description: 'This endpoint will list all websites'
+      parameters: []
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    -
+                      id: 1
+                      name: 'Sequi voluptates non eaque blanditiis velit blanditiis deserunt.'
+                      url: 'http://www.beer.net/nobis-possimus-amet-ut-dolore-aut-debitis'
+                      description: 'Aut voluptatem debitis quasi ab deserunt expedita aspernatur. Sed laudantium et ipsam eum quo. Rerum quidem voluptas sapiente et.'
+                    -
+                      id: 2
+                      name: 'Perspiciatis reprehenderit sint rem asperiores.'
+                      url: 'https://kutch.net/ratione-quod-hic-beatae.html'
+                      description: 'Ullam dolorem et consequatur dicta est aut dolor. Doloribus qui ut perferendis sint quidem doloremque quas ratione. Enim et voluptas explicabo ut error. Recusandae et eum est quo accusamus vero maiores.'
+                    -
+                      id: 3
+                      name: 'Accusamus et aut et ratione et.'
+                      url: 'http://dubuque.net/'
+                      description: 'Illum magni et quod omnis et ea. Repellat ullam consectetur et aliquid animi sint. Vel illum tempore mollitia et quia qui est. Ut non et labore saepe provident in doloremque nostrum.'
+                    -
+                      id: 4
+                      name: 'Qui sed quibusdam consequatur dolores illo id.'
+                      url: 'http://steuber.com/qui-facilis-temporibus-earum-minus-eaque-est'
+                      description: 'Aliquam recusandae ab eligendi inventore rem odio. Nulla totam consectetur in non excepturi.'
+                    -
+                      id: 5
+                      name: 'Qui officia sit nam commodi neque voluptatem.'
+                      url: 'http://hauck.net/aut-corporis-odit-aliquam-repellendus-inventore'
+                      description: 'In in veritatis alias odio. Sapiente vel consequatur asperiores eius possimus quia eaque minus. Consequatur voluptates distinctio cumque aut totam sit ad fugiat.'
+                    -
+                      id: 6
+                      name: 'Aliquam impedit et eaque non inventore.'
+                      url: 'http://hammes.com/'
+                      description: 'Vel nihil rem quia deserunt libero. Impedit non odio aperiam corrupti voluptatibus expedita. Deserunt in consequatur tenetur est consequatur. Rerum vel nihil tempore qui. Delectus rerum occaecati ratione repudiandae ut.'
+                    -
+                      id: 7
+                      name: 'Repudiandae quam vel assumenda voluptatem iure facere.'
+                      url: 'http://www.legros.net/deleniti-non-aut-corporis-magnam-sunt-optio.html'
+                      description: 'Maxime ex saepe maiores magnam porro ut est. Ut quasi dolor exercitationem eaque.'
+                    -
+                      id: 8
+                      name: 'Autem eum repellendus qui et necessitatibus.'
+                      url: 'http://kessler.com/id-enim-provident-quo-repellendus-iste'
+                      description: 'Ut sequi atque molestias magnam qui. Soluta voluptatem quibusdam ut accusamus quia dolorem asperiores quam. Ipsam aspernatur id ipsam aperiam sed. Dolor officiis natus fugiat repellat.'
+                    -
+                      id: 9
+                      name: 'Nulla quia est esse esse ducimus laudantium.'
+                      url: 'http://www.rosenbaum.com/ut-velit-placeat-qui-quo-vel-magnam-ullam.html'
+                      description: 'Voluptatibus aut deleniti aliquid omnis magni odio repellat. Earum omnis molestiae aut odio excepturi magni nam cum. Amet exercitationem eius expedita maxime recusandae. Animi et voluptatem consequuntur sint accusantium tenetur et.'
+                    -
+                      id: 10
+                      name: 'Dolore beatae quo architecto natus nemo et nulla.'
+                      url: 'http://corkery.com/'
+                      description: 'Vitae neque praesentium et temporibus blanditiis quia. Eos maiores accusamus voluptas non eius. Earum sapiente molestias voluptatum aut sed.'
+                    -
+                      id: 11
+                      name: 'Odit est delectus et et architecto doloremque.'
+                      url: 'http://gusikowski.org/modi-corporis-adipisci-veniam-ut-qui.html'
+                      description: 'Aut qui doloribus iusto. Dolorem deleniti aperiam recusandae. Cum et in pariatur voluptatum. Iusto est autem sunt sit sit et aut quod.'
+                    -
+                      id: 12
+                      name: 'Aperiam blanditiis et dolor atque omnis tempore qui.'
+                      url: 'https://www.walter.com/accusamus-dolorem-dolor-est-in-quis-alias'
+                      description: 'Omnis consequatur deserunt voluptatem ex vel unde. Aliquam accusamus expedita animi voluptatem expedita dolores. Expedita voluptas nihil vitae hic voluptatem.'
+                    -
+                      id: 13
+                      name: 'Reiciendis magnam repudiandae cum cum non libero non et.'
+                      url: 'http://www.kutch.com/vero-earum-sit-consequatur-totam-sequi-iusto'
+                      description: 'Sed molestiae quo placeat velit magni est laborum. Cumque consequatur laborum odio omnis incidunt rerum inventore. Placeat vel provident deleniti sint molestias qui.'
+                    -
+                      id: 14
+                      name: 'Quas laudantium commodi maxime qui tempore dolores.'
+                      url: 'https://www.block.com/magni-numquam-ratione-porro-ut-voluptatem-eos-enim-consequatur'
+                      description: 'Est et architecto sapiente debitis sit et ea. Ut mollitia vel dignissimos eveniet commodi. Ut ipsum maiores sit sunt eos eum.'
+                    -
+                      id: 15
+                      name: 'Est perspiciatis rerum fuga quaerat excepturi.'
+                      url: 'http://www.wisoky.info/omnis-sequi-temporibus-omnis-ut.html'
+                      description: 'Consequatur iusto accusantium fugit sequi est pariatur. Ipsa nihil qui voluptatem culpa soluta quia voluptate tenetur.'
+                  links:
+                    first: 'http://localhost/api/websites?page=1'
+                    last: 'http://localhost/api/websites?page=2'
+                    prev: null
+                    next: 'http://localhost/api/websites?page=2'
+                  meta:
+                    current_page: 1
+                    from: 1
+                    last_page: 2
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        active: false
+                      -
+                        url: 'http://localhost/api/websites?page=1'
+                        label: '1'
+                        active: true
+                      -
+                        url: 'http://localhost/api/websites?page=2'
+                        label: '2'
+                        active: false
+                      -
+                        url: 'http://localhost/api/websites?page=2'
+                        label: 'Next &raquo;'
+                        active: false
+                    path: 'http://localhost/api/websites'
+                    per_page: 15
+                    to: 15
+                    total: 20
+                properties:
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 1
+                        name: 'Sequi voluptates non eaque blanditiis velit blanditiis deserunt.'
+                        url: 'http://www.beer.net/nobis-possimus-amet-ut-dolore-aut-debitis'
+                        description: 'Aut voluptatem debitis quasi ab deserunt expedita aspernatur. Sed laudantium et ipsam eum quo. Rerum quidem voluptas sapiente et.'
+                      -
+                        id: 2
+                        name: 'Perspiciatis reprehenderit sint rem asperiores.'
+                        url: 'https://kutch.net/ratione-quod-hic-beatae.html'
+                        description: 'Ullam dolorem et consequatur dicta est aut dolor. Doloribus qui ut perferendis sint quidem doloremque quas ratione. Enim et voluptas explicabo ut error. Recusandae et eum est quo accusamus vero maiores.'
+                      -
+                        id: 3
+                        name: 'Accusamus et aut et ratione et.'
+                        url: 'http://dubuque.net/'
+                        description: 'Illum magni et quod omnis et ea. Repellat ullam consectetur et aliquid animi sint. Vel illum tempore mollitia et quia qui est. Ut non et labore saepe provident in doloremque nostrum.'
+                      -
+                        id: 4
+                        name: 'Qui sed quibusdam consequatur dolores illo id.'
+                        url: 'http://steuber.com/qui-facilis-temporibus-earum-minus-eaque-est'
+                        description: 'Aliquam recusandae ab eligendi inventore rem odio. Nulla totam consectetur in non excepturi.'
+                      -
+                        id: 5
+                        name: 'Qui officia sit nam commodi neque voluptatem.'
+                        url: 'http://hauck.net/aut-corporis-odit-aliquam-repellendus-inventore'
+                        description: 'In in veritatis alias odio. Sapiente vel consequatur asperiores eius possimus quia eaque minus. Consequatur voluptates distinctio cumque aut totam sit ad fugiat.'
+                      -
+                        id: 6
+                        name: 'Aliquam impedit et eaque non inventore.'
+                        url: 'http://hammes.com/'
+                        description: 'Vel nihil rem quia deserunt libero. Impedit non odio aperiam corrupti voluptatibus expedita. Deserunt in consequatur tenetur est consequatur. Rerum vel nihil tempore qui. Delectus rerum occaecati ratione repudiandae ut.'
+                      -
+                        id: 7
+                        name: 'Repudiandae quam vel assumenda voluptatem iure facere.'
+                        url: 'http://www.legros.net/deleniti-non-aut-corporis-magnam-sunt-optio.html'
+                        description: 'Maxime ex saepe maiores magnam porro ut est. Ut quasi dolor exercitationem eaque.'
+                      -
+                        id: 8
+                        name: 'Autem eum repellendus qui et necessitatibus.'
+                        url: 'http://kessler.com/id-enim-provident-quo-repellendus-iste'
+                        description: 'Ut sequi atque molestias magnam qui. Soluta voluptatem quibusdam ut accusamus quia dolorem asperiores quam. Ipsam aspernatur id ipsam aperiam sed. Dolor officiis natus fugiat repellat.'
+                      -
+                        id: 9
+                        name: 'Nulla quia est esse esse ducimus laudantium.'
+                        url: 'http://www.rosenbaum.com/ut-velit-placeat-qui-quo-vel-magnam-ullam.html'
+                        description: 'Voluptatibus aut deleniti aliquid omnis magni odio repellat. Earum omnis molestiae aut odio excepturi magni nam cum. Amet exercitationem eius expedita maxime recusandae. Animi et voluptatem consequuntur sint accusantium tenetur et.'
+                      -
+                        id: 10
+                        name: 'Dolore beatae quo architecto natus nemo et nulla.'
+                        url: 'http://corkery.com/'
+                        description: 'Vitae neque praesentium et temporibus blanditiis quia. Eos maiores accusamus voluptas non eius. Earum sapiente molestias voluptatum aut sed.'
+                      -
+                        id: 11
+                        name: 'Odit est delectus et et architecto doloremque.'
+                        url: 'http://gusikowski.org/modi-corporis-adipisci-veniam-ut-qui.html'
+                        description: 'Aut qui doloribus iusto. Dolorem deleniti aperiam recusandae. Cum et in pariatur voluptatum. Iusto est autem sunt sit sit et aut quod.'
+                      -
+                        id: 12
+                        name: 'Aperiam blanditiis et dolor atque omnis tempore qui.'
+                        url: 'https://www.walter.com/accusamus-dolorem-dolor-est-in-quis-alias'
+                        description: 'Omnis consequatur deserunt voluptatem ex vel unde. Aliquam accusamus expedita animi voluptatem expedita dolores. Expedita voluptas nihil vitae hic voluptatem.'
+                      -
+                        id: 13
+                        name: 'Reiciendis magnam repudiandae cum cum non libero non et.'
+                        url: 'http://www.kutch.com/vero-earum-sit-consequatur-totam-sequi-iusto'
+                        description: 'Sed molestiae quo placeat velit magni est laborum. Cumque consequatur laborum odio omnis incidunt rerum inventore. Placeat vel provident deleniti sint molestias qui.'
+                      -
+                        id: 14
+                        name: 'Quas laudantium commodi maxime qui tempore dolores.'
+                        url: 'https://www.block.com/magni-numquam-ratione-porro-ut-voluptatem-eos-enim-consequatur'
+                        description: 'Est et architecto sapiente debitis sit et ea. Ut mollitia vel dignissimos eveniet commodi. Ut ipsum maiores sit sunt eos eum.'
+                      -
+                        id: 15
+                        name: 'Est perspiciatis rerum fuga quaerat excepturi.'
+                        url: 'http://www.wisoky.info/omnis-sequi-temporibus-omnis-ut.html'
+                        description: 'Consequatur iusto accusantium fugit sequi est pariatur. Ipsa nihil qui voluptatem culpa soluta quia voluptate tenetur.'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        name:
+                          type: string
+                          example: 'Sequi voluptates non eaque blanditiis velit blanditiis deserunt.'
+                        url:
+                          type: string
+                          example: 'http://www.beer.net/nobis-possimus-amet-ut-dolore-aut-debitis'
+                        description:
+                          type: string
+                          example: 'Aut voluptatem debitis quasi ab deserunt expedita aspernatur. Sed laudantium et ipsam eum quo. Rerum quidem voluptas sapiente et.'
+                  links:
+                    type: object
+                    properties:
+                      first:
+                        type: string
+                        example: 'http://localhost/api/websites?page=1'
+                      last:
+                        type: string
+                        example: 'http://localhost/api/websites?page=2'
+                      prev:
+                        type: string
+                        example: null
+                      next:
+                        type: string
+                        example: 'http://localhost/api/websites?page=2'
+                  meta:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 2
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            active: false
+                          -
+                            url: 'http://localhost/api/websites?page=1'
+                            label: '1'
+                            active: true
+                          -
+                            url: 'http://localhost/api/websites?page=2'
+                            label: '2'
+                            active: false
+                          -
+                            url: 'http://localhost/api/websites?page=2'
+                            label: 'Next &raquo;'
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            active:
+                              type: boolean
+                              example: false
+                      path:
+                        type: string
+                        example: 'http://localhost/api/websites'
+                      per_page:
+                        type: integer
+                        example: 15
+                      to:
+                        type: integer
+                        example: 15
+                      total:
+                        type: integer
+                        example: 20
+      tags:
+        - 'Website management'
+      security: []
+    post:
+      summary: 'Store Website'
+      operationId: storeWebsite
+      description: 'This endpoint will create a new website'
+      parameters: []
+      responses:
+        201:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: success
+                  message: 'Website successfully created'
+                  data:
+                    id: 21
+                    name: 'My Website'
+                    url: 'https://www.example.com'
+                    description: 'This is my website. I hope you like it!'
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: 'Website successfully created'
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 21
+                      name:
+                        type: string
+                        example: 'My Website'
+                      url:
+                        type: string
+                        example: 'https://www.example.com'
+                      description:
+                        type: string
+                        example: 'This is my website. I hope you like it!'
+        400:
+          description: 'Validation Error'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'The example_field1 is required. (and 2 more errors)'
+                  errors:
+                    example_field1:
+                      - 'The example_field1 field is required.'
+                    example_field2:
+                      - 'The example_field2 field must be numeric.'
+                    example_field3:
+                      - 'The example_field3 field must be a date.'
+                properties:
+                  message:
+                    type: string
+                    example: 'The example_field1 is required. (and 2 more errors)'
+                  errors:
+                    type: object
+                    properties:
+                      example_field1:
+                        type: array
+                        example:
+                          - 'The example_field1 field is required.'
+                        items:
+                          type: string
+                      example_field2:
+                        type: array
+                        example:
+                          - 'The example_field2 field must be numeric.'
+                        items:
+                          type: string
+                      example_field3:
+                        type: array
+                        example:
+                          - 'The example_field3 field must be a date.'
+                        items:
+                          type: string
+      tags:
+        - 'Website management'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'The name of the website. Must not be greater than 255 characters.'
+                  example: 'My Website'
+                url:
+                  type: string
+                  description: 'The URL of the website. Must be a valid URL. Must not be greater than 255 characters.'
+                  example: 'https://www.example.com'
+                description:
+                  type: string
+                  description: 'The description of the website.'
+                  example: 'This is my website. I hope you like it!'
+              required:
+                - name
+                - url
+                - description
+      security: []
+  '/api/websites/{id}':
+    get:
+      summary: 'Show Website'
+      operationId: showWebsite
+      description: 'This endpoint will show the details of the website'
+      parameters: []
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: success
+                  message: 'Website successfully retrieved'
+                  data:
+                    id: 21
+                    name: 'My Website'
+                    url: 'https://www.example.com'
+                    description: 'This is my website. I hope you like it!'
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: 'Website successfully retrieved'
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 21
+                      name:
+                        type: string
+                        example: 'My Website'
+                      url:
+                        type: string
+                        example: 'https://www.example.com'
+                      description:
+                        type: string
+                        example: 'This is my website. I hope you like it!'
+        404:
+          description: 'Not Found'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'No query results for model [App\Models\ModelName] 1'
+                properties:
+                  message:
+                    type: string
+                    example: 'No query results for model [App\Models\ModelName] 1'
+      tags:
+        - 'Website management'
+      security: []
+    put:
+      summary: 'Update Website'
+      operationId: updateWebsite
+      description: 'This endpoint will update a Website'
+      parameters: []
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: success
+                  message: 'Website successfully updated'
+                  data:
+                    id: 21
+                    name: 'My Website edited'
+                    url: 'https://www.editedexample.com'
+                    description: 'This is my edited website. I hope you like it!'
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: 'Website successfully updated'
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 21
+                      name:
+                        type: string
+                        example: 'My Website edited'
+                      url:
+                        type: string
+                        example: 'https://www.editedexample.com'
+                      description:
+                        type: string
+                        example: 'This is my edited website. I hope you like it!'
+        400:
+          description: 'Validation Error'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'The example_field1 is required. (and 2 more errors)'
+                  errors:
+                    example_field1:
+                      - 'The example_field1 field is required.'
+                    example_field2:
+                      - 'The example_field2 field must be numeric.'
+                    example_field3:
+                      - 'The example_field3 field must be a date.'
+                properties:
+                  message:
+                    type: string
+                    example: 'The example_field1 is required. (and 2 more errors)'
+                  errors:
+                    type: object
+                    properties:
+                      example_field1:
+                        type: array
+                        example:
+                          - 'The example_field1 field is required.'
+                        items:
+                          type: string
+                      example_field2:
+                        type: array
+                        example:
+                          - 'The example_field2 field must be numeric.'
+                        items:
+                          type: string
+                      example_field3:
+                        type: array
+                        example:
+                          - 'The example_field3 field must be a date.'
+                        items:
+                          type: string
+        404:
+          description: 'Not Found'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'No query results for model [App\Models\ModelName] 1'
+                properties:
+                  message:
+                    type: string
+                    example: 'No query results for model [App\Models\ModelName] 1'
+      tags:
+        - 'Website management'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'The name of the website. Must not be greater than 255 characters.'
+                  example: 'My Website'
+                url:
+                  type: string
+                  description: 'The URL of the website. Must be a valid URL. Must not be greater than 255 characters.'
+                  example: 'https://www.example.com'
+                description:
+                  type: string
+                  description: 'The description of the website.'
+                  example: 'This is my website. I hope you like it!'
+      security: []
+    delete:
+      summary: 'Delete website'
+      operationId: deleteWebsite
+      description: 'This endpoint will delete a website'
+      parameters: []
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: success
+                  message: 'Website successfully deleted'
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: 'Website successfully deleted'
+        404:
+          description: 'Not Found'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'No query results for model [App\Models\ModelName] 1'
+                properties:
+                  message:
+                    type: string
+                    example: 'No query results for model [App\Models\ModelName] 1'
+      tags:
+        - 'Website management'
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the website.'
+        example: 18
+        required: true
+        schema:
+          type: integer
+tags:
+  -
+    name: 'Post management'
+    description: "\nAPIs for managing posts"
+  -
+    name: 'Subscription management'
+    description: "\nAPIs for managing subscriptions"
+  -
+    name: 'Website management'
+    description: "\nAPIs for managing websites"

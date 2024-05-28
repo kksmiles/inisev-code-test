@@ -26,13 +26,13 @@ endpoints:
         name: website_id
         description: 'The ID of the website.'
         required: true
-        example: 7
+        example: 10
         type: integer
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      website_id: 7
+      website_id: 10
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -97,13 +97,13 @@ endpoints:
         name: website_id
         description: 'The ID of the website.'
         required: true
-        example: 11
+        example: 13
         type: integer
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      website_id: 11
+      website_id: 13
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:

@@ -754,7 +754,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/posts/3" \
+    "http://localhost/api/posts/17" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -766,7 +766,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/posts/3"
+    "http://localhost/api/posts/17"
 );
 
 const headers = {
@@ -914,10 +914,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-posts--id-"
-               value="3"
+               value="17"
                data-component="url">
     <br>
-<p>The ID of the post. Example: <code>3</code></p>
+<p>The ID of the post. Example: <code>17</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -957,14 +957,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/posts/8" \
+    "http://localhost/api/posts/7" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/posts/8"
+    "http://localhost/api/posts/7"
 );
 
 const headers = {
@@ -1076,10 +1076,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-posts--id-"
-               value="8"
+               value="7"
                data-component="url">
     <br>
-<p>The ID of the post. Example: <code>8</code></p>
+<p>The ID of the post. Example: <code>7</code></p>
             </div>
                     </form>
 
@@ -1100,7 +1100,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/websites/7/subscribe" \
+    "http://localhost/api/websites/10/subscribe" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -1111,7 +1111,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/websites/7/subscribe"
+    "http://localhost/api/websites/10/subscribe"
 );
 
 const headers = {
@@ -1228,10 +1228,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="website_id"                data-endpoint="PUTapi-websites--website_id--subscribe"
-               value="7"
+               value="10"
                data-component="url">
     <br>
-<p>The ID of the website. Example: <code>7</code></p>
+<p>The ID of the website. Example: <code>10</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1260,7 +1260,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/websites/11/unsubscribe" \
+    "http://localhost/api/websites/13/unsubscribe" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -1271,7 +1271,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/websites/11/unsubscribe"
+    "http://localhost/api/websites/13/unsubscribe"
 );
 
 const headers = {
@@ -1388,10 +1388,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="website_id"                data-endpoint="PUTapi-websites--website_id--unsubscribe"
-               value="11"
+               value="13"
                data-component="url">
     <br>
-<p>The ID of the website. Example: <code>11</code></p>
+<p>The ID of the website. Example: <code>13</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1860,14 +1860,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/websites/20" \
+    --get "http://localhost/api/websites/18" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/websites/20"
+    "http://localhost/api/websites/18"
 );
 
 const headers = {
@@ -1985,10 +1985,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-websites--id-"
-               value="20"
+               value="18"
                data-component="url">
     <br>
-<p>The ID of the website. Example: <code>20</code></p>
+<p>The ID of the website. Example: <code>18</code></p>
             </div>
                     </form>
 
@@ -2005,7 +2005,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/websites/19" \
+    "http://localhost/api/websites/20" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -2018,7 +2018,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/websites/19"
+    "http://localhost/api/websites/20"
 );
 
 const headers = {
@@ -2167,10 +2167,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-websites--id-"
-               value="19"
+               value="20"
                data-component="url">
     <br>
-<p>The ID of the website. Example: <code>19</code></p>
+<p>The ID of the website. Example: <code>20</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -2221,14 +2221,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/websites/10" \
+    "http://localhost/api/websites/7" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/websites/10"
+    "http://localhost/api/websites/7"
 );
 
 const headers = {
@@ -2340,10 +2340,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-websites--id-"
-               value="10"
+               value="7"
                data-component="url">
     <br>
-<p>The ID of the website. Example: <code>10</code></p>
+<p>The ID of the website. Example: <code>7</code></p>
             </div>
                     </form>
 

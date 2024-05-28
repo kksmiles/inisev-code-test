@@ -25,13 +25,14 @@ class SubscriptionRequest extends FormRequest
             'user_email' => ['required', 'email', 'exists:users,email'],
         ];
     }
+
     public function bodyParameters()
     {
         return [
             'user_email' => [
                 'description' => 'The email of the user',
-                'example' => 'user@example.com'
-            ]
+                'example' => 'user@example.com',
+            ],
         ];
     }
 }

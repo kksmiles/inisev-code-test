@@ -2,9 +2,12 @@
 
 namespace App\Models;
 
+use App\Observers\PostObserver;
+use Illuminate\Database\Eloquent\Attributes\ObservedBy;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+#[ObservedBy([PostObserver::class])]
 class Post extends Model
 {
     use HasFactory;
@@ -18,5 +21,12 @@ class Post extends Model
     public function website()
     {
         return $this->belongsTo(Website::class);
+    }
+
+    public function notify_users()
+    {
+        return $this->belongsToMany(User::class, UserPostNotification::class)
+            ->withPivot('sent')
+            ->withTimestamps();
     }
 }

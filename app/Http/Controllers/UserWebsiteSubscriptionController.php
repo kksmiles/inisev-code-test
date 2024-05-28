@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\UserWebsiteSubscriptionController\SubscriptionRequest;
+use App\Models\User;
 use App\Models\UserWebsiteSubscription;
 use App\Models\Website;
-use App\Models\User;
 
 /**
  * @group Subscription management
@@ -29,7 +29,7 @@ class UserWebsiteSubscriptionController extends Controller
             $user = User::where('email', $attributes['user_email'])->firstOrFail();
 
             // Only subscribe if the user is not already subscribed
-            if (!$user->subscribed_websites->contains($website)) {
+            if (! $user->subscribed_websites->contains($website)) {
                 UserWebsiteSubscription::updateOrCreate(
                     [
                         'user_id' => $user['id'],
@@ -45,7 +45,7 @@ class UserWebsiteSubscriptionController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'status' => 'error',
-                'message' => 'Something went wrong : ' . $e->getMessage(),
+                'message' => 'Something went wrong : '.$e->getMessage(),
             ], 500);
         }
 
@@ -70,7 +70,7 @@ class UserWebsiteSubscriptionController extends Controller
             $user = User::where('email', $attributes['user_email'])->firstOrFail();
 
             // Only unsubscribe if the user is not already subscribed
-            if (!$user->unsubscribed_websites->contains($website)) {
+            if (! $user->unsubscribed_websites->contains($website)) {
                 UserWebsiteSubscription::updateOrCreate(
                     [
                         'user_id' => $user['id'],
@@ -85,7 +85,7 @@ class UserWebsiteSubscriptionController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'status' => 'error',
-                'message' => 'Something went wrong : ' . $e->getMessage(),
+                'message' => 'Something went wrong : '.$e->getMessage(),
             ], 500);
         }
 
